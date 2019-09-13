@@ -1,15 +1,21 @@
 {
   "name": "intro-mern-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard --fix",
+    "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/egroj01/MERN-stack-2019.git",
+  "author": "Jorge Castillo <jj.jorgecastillo@gmail.com>",
+  "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2",
+    "standard": "^14.2.0"
   }
 }

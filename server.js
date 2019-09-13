@@ -1,6 +1,10 @@
-const express = require('express');
+require("dotenv").config();
+const express = require("express");
+const { appConfig } = require("./config");
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
-app.listen(port, () => console.log(`Escuchando en Port ${port}`));
+app.listen(appConfig.port, () =>
+  console.log(`Listen on Port: ${appConfig.port}`)
+);
